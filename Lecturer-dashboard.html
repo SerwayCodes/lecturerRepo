@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <title>C & G - Dashboard</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/plugins/simple-calendar/simple-calendar.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <div class="header">
+        <!-- logos div -->
+        <div class="header-left">
+          <a href="#" class="logo">
+            <img class="rounded-circle" src="assets/img/mubas-logo.png" alt="Logo" />
+          </a>
+          <a href="#" class="logo logo-small">
+            <img class="rounded-circle" src="assets/img/mubas-logo.png" alt="Logo" width="50" height="50" />
+          </a>
+        </div>
+
+        <a href="#" id="toggle_btn">
+          <i class="fas fa-align-left"></i>
+        </a>
+
+        <div class="top-nav-search">
+          <form>
+            <input type="search" class="form-control" placeholder="Search here" />
+            <button class="btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <a class="mobile_btn" id="mobile_btn">
+          <i class="fas fa-bars"></i>
+        </a>
+
+        <!-- STUDENT MENU START -->
+
+        <ul class="nav user-menu">
+          <!-- top right corner notification icon -->
+          <li class="nav-item">
+            <a href="#">
+              <i class="far fa-bell"></i>
+            </a>
+
+            <!-- top right corner student profile icon-->
+          </li>
+
+          <li class="nav-item dropdown has-arrow">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <span class="user-icon"><i class="fa-solid fa-user-large fa-2x"></i></span>
+            </a>
+            <div class="dropdown-menu">
+              <div class="user-header">
+                <div class="">
+                  <span><i class="fa-solid fa-user-large fa-3x"></i></span>
+                </div>
+                <div class="user-text">
+                  <h6>Synet Maonekedwe</h6>
+                  <p class="text-muted mb-0">Lecturer</p>
+                </div>
+              </div>
+              <a class="dropdown-item" href="profile.html">My Profile</a>
+
+              <a class="dropdown-item" href="index.html">Logout</a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- STUDENT MENU END -->
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+              <li class="menu-title">
+                <span>Main Menu</span>
+              </li>
+
+              <li>
+                <a href="Lecturer-dashboard.html"
+                  ><i class="fa-solid fa-house"></i>
+                  <span> Lecturer Dashboard</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="profile.html"
+                  ><i class="fas fa-user-graduate"></i>
+                  <span> My Profile </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="registratiom.html"
+                  ><i class="fa-solid fa-registered"></i>
+                  <span> Registration</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="classes.html"><i class="fas fa-book-reader"></i> <span>Classes</span> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrapper">
+        <div class="content container-fluid">
+          <div class="page-header">
+            <div class="row">
+              <div class="col-sm-12">
+                <h3 class="page-title">Synet Maonekedwe</h3>
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item active">Lecturer Dashboard</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-lg-12 col-xl-9">
+              <div class="row">
+                <div class="col-12 col-lg-8 col-xl-8 d-flex">
+                  <div class="card flex-fill">
+                    <div class="card-header">
+                      <div class="row align-items-center">
+                        <div class="col-6">
+                          <h5 class="card-title">Lessons Per Week</h5>
+                        </div>
+                        <div class="col-6">
+                          <span class="float-right view-link"><a href="classes.html">View All Modules</a></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pt-3 pb-3">
+                      <div class="table-responsive lesson">
+                        <table class="table table-center">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="date">
+                                  <b>Aug 4, Tuesday</b>
+                                  <p>2.30pm - 3.30pm (60min)</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="date">
+                                  <b>Wiring and testing electrical circuits</b>
+                                  <p>CEET1 class</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="date">
+                                  <b>Aug 5, Wednesday</b>
+                                  <p>3.00pm - 4.30pm (90min)</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="date">
+                                  <b>Working in Engineering</b>
+                                  <p>CEET1 class</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="date">
+                                  <b>Aug 6, Thursday</b>
+                                  <p>11.00am - 12.00pm (20min)</p>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="date">
+                                  <b>Principles of engineering technology</b>
+                                  <p>CEET1 class</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 d-flex">
+                  <div class="card flex-fill">
+                    <div class="card-header">
+                      <div class="row align-items-center">
+                        <div class="col-12">
+                          <h5 class="card-title">Semester Progress</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dash-widget">
+                      <div class="circle-bar circle-bar1">
+                        <div class="circle-graph1" data-percent="50">
+                          <b>50%</b>
+                        </div>
+                      </div>
+                      <div class="dash-info">
+                        <h6>Lesson Progressed</h6>
+                        <h4>30 <span>/ 60</span></h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-12 col-xl-3 d-flex">
+              <div class="card flex-fill">
+                <div class="card-header">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+                      <h5 class="card-title">Calendar</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div id="" class="calendar-container"></div>
+                  <div class="calendar-info calendar-info1">
+                    <div class="calendar-details">
+                      <h6 class="calendar-blue d-flex justify-content-between align-items-center">
+                        Student Registration <span>09 Jan- 15 Jan </span>
+                      </h6>
+                    </div>
+                    <div class="calendar-details">
+                      <h6 class="calendar-violet d-flex justify-content-between align-items-center">
+                        Midsemister Exams <span>10 April - 15 April</span>
+                      </h6>
+                    </div>
+                    <div class="calendar-details">
+                      <h6 class="calendar-red d-flex justify-content-between align-items-center">
+                        Mid Semester Break <span>16 April - 27 April</span>
+                      </h6>
+                    </div>
+                    <div class="calendar-details">
+                      <h6 class="calendar-orange d-flex justify-content-between align-items-center">
+                        End of Yearl Exams <span>11 May - 12 June</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>Copyright © 2023 City and Guilds.</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+    <script src="assets/plugins/apexchart/chart-data.js"></script>
+
+    <script src="assets/plugins/simple-calendar/jquery.simple-calendar.js"></script>
+    <script src="assets/js/calander.js"></script>
+
+    <script src="assets/js/circle-progress.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
